@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_body_mass_index_calculator/bmi_neumorphic_design.dart';
 import 'package:flutter_body_mass_index_calculator/navigation_design_bmi_calculator.dart';
 import 'package:flutter_body_mass_index_calculator/simple_bmi_calculator_design.dart';
+import 'package:flutter_body_mass_index_calculator/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,13 +15,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(
-        title: "Bmi Calculator",
-      ),
+      home: SplashScreen(),
+      // const MyHomePage(
+      //   title: "Bmi Calculator",
+      // ),
     );
   }
 }
