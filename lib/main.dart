@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_body_mass_index_calculator/bmi_neumorphic_design.dart';
+import 'package:flutter_body_mass_index_calculator/navigation_design_bmi_calculator.dart';
 import 'package:flutter_body_mass_index_calculator/simple_bmi_calculator_design.dart';
 
 void main() {
@@ -52,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[SimpleBMICalculatorDesign()],
+          children: <Widget>[NavigationDesignBMICalculatorWelcomePage()],
         ),
       ),
     );

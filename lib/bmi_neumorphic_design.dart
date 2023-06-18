@@ -410,8 +410,11 @@ class _NeumorphicDesignBMICalculatorState
             onTap: () {
               setState(() {
                 print("BMI is calculating");
-                print("Male : $isGenderIsMale");
-                print("Female : $isGenderIsFemale");
+                if (isGenderIsMale) {
+                  print("Gender is Female");
+                } else {
+                  print("Gender is Female");
+                }
                 print("Weight : $weightCounter");
                 print("Age : $ageCounter");
                 print("Height : $heightCounter");
